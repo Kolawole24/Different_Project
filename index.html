@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="tempt.css" />
+    <script src="tempt.js"></script>
+</head>
+<body>
+    <div id="tempt">
+        Celsius:<p><input id="c" onkeyup="convert('C')">degrees celcius</p>
+            Fahrenheit:<p><input  id="f" onkeyup="convert('F')">degrees fahrenheit</p>
+                
+    </div>
+
+    <h2>Enter Fahrenheit</h2>
+    <input type="text" id="fahrenheit" onkeypress="return allowOnlyNumbers()">
+    <button onclick="findCelsius()">Find Celsius</button>
+    <h4>Output: <span id = "output"></span></h4>
+</body>
+</html> 
